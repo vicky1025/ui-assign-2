@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>UIT Assignment-2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script defer src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/f65cc028f8.js" crossorigin="anonymous"></script>
+    <link href="index.css" rel="stylesheet" />
+    <script src="index.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="brand-name">
+                    <a href="" class="logo">CS18501 - UI</a>
+                </div>
+                <div class="navbar">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#form">Form</a></li>
+                        <li><a href="#slideshow">Slideshow</a></li>                      
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="container">
+            <div class="row full-screen">
+                <div class="home-content">
+                    <div class="block">                        
+                        <h1>UI Assignment - 2</h1>
+                        <h6>Done By</h6>
+                        <h3>Vignesh G (168)</h3>                        
+                        <div class="cv-button">
+                            <a href="#form">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <section class="form-section" id="form">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h1>Form</h1>
+                    <p class="small">Html Form Example!!</p>
+                </div>
+            </div>
+            <br />   
+            <div class="container my-custom-container" id="marginadjust">
+                
+                <div class="jumbotron">
+                    <form>
+                      <div class="form-group" style="text-align: center;">
+                        <h1>Html Form!!</h1>			
+                      </div>
+                      <br/>
+                      <div class="form-group adjusment">
+                        <label for="exampleInputName">Name:</label>
+                        <input type="text" class="form-control name-input" placeholder="Name" aria-describedby="nameHelp" onchange="validateName()">			
+                      </div>
+                      <div class="form-group adjusment">
+                        <label for="exampleInputAge">Age:</label>
+                        <input type="number" class="form-control age-input" placeholder="Age" min="0" max="150" aria-describedby="ageHelp" onchange="validateAge()"> 			
+                      </div>
+                      <div class="form-group adjusment">
+                        <label for="exampleInputEmail1">Phone No:</label>
+                        <input type="tel" class="form-control number-input" placeholder="Phone Number" maxlength="10" aria-describedby="numberHelp" onchange="validatePhone()">			
+                      </div>
+                      <div class="form-group adjusment">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="text" class="form-control email-input" placeholder="UserName" name="Email Address" aria-describedby="emailHelp" onchange="validateMail()">
+                      </div>
+                      <p class="error-email-message"></p>
+                      <div class="form-group adjusment">
+                        <label for="exampleadob">DOB:</label>
+                        <input type="date" class="form-control"  name="dob" >
+                    </div>
+                      <button type="submit" class="btn btn-success" style="margin-top: 10px; margin-left: 35px;">Submit</button>
+                    </form>
+                </div>
+            </div>         
+        </div>
+    </section>
+
+    <section class="slideshow-section" id="slideshow">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h1>Slideshow!!</h1>
+                    <p class="small">Slideshow of images</p>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="container">
+            <div id="slideshow">
+                <div class="slide-wrapper">
+                    <div class="slide"><h1 class="slide-number"></h1></div>
+                    <div class="slide"><h1 class="slide-number"></h1></div>
+                    <div class="slide"><h1 class="slide-number"></h1></div>
+                    <div class="slide"><h1 class="slide-number"></h1></div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
+
+    
+</body>
+</html>
